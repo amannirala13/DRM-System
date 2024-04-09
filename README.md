@@ -51,5 +51,5 @@ Now if the secured executable was built for your system, it will be loaded in th
 
 ---
 
-*CAUTION: The full details and code is not published as the reserach is still under process. This repository has been made public for testing and feedback purpose. This is not the end result of and any use of the current code by third-paries is strictly prohibeted the respository owner(s) will not be responsible for any damage caused by the use of this code.* 
+*CAUTION: The full details and code is not published as the reserach is still under process. This repository has been made public for testing and feedback purpose. This is not the finished solution and any use of the current code by any third-party for commercial or peronal purpose other than testing locally is strictly prohibited, the respository owner(s) will not be responsible for any damage caused by the use of the current code.* 
 
