@@ -17,7 +17,7 @@ TODO: Provide the GPIO guide
 
 TODO: Provide the Serial guide
 
-After the hardware is connected and tested, you can install the device driver or boot the system with the compatible in system kernel. *Check the kernel logs for verifying if the DRM sub-system is connected properly*.
+After the hardware is connected and tested, you can install the device driver or boot the system with the compatible kernel. *Check the kernel logs for verifying if the DRM sub-system is connected properly*.
 
 After this setup is completed. Software distributers need to regester with our secured servers to start using the CI/CD services for on-demand secure file generation and delivery.
 
