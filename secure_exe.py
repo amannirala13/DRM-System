@@ -1,12 +1,29 @@
+'''
+@author - Aman Nirala (@amannirala13)
+
+@date - 9/4/2024
+
+@description - This file contains functions extended from the UNIX exec syscall
+'''
+
+
+# TODO: Shift the logc to the kernel space
+
 import sys
 import re
 import os
-from header import extract_id
-from crypter import verify_uuid
+from secure_id import partition_file
+from crypter import verify_uuid, verify_signature, decrypt, generate_uuid
 
+'''
+    Executes the exec file with secureity check
+'''
 def exec(path):
-    id = extract_id(path).decode("latin-1")
-    if verify_uuid(id):
+    device_id, _ = generate_uuid() 
+    exe, id = partition_file(path)
+    print(f"id: {id} \n\n\nsize: {len(id)}")
+    decrypted_id = decrypt(id)
+    if verify_signature(exe+device_id, decrypted_id):
         os.system(f"./{path}")
     else:
         print("not verified")
