@@ -1,6 +1,9 @@
 import sys
 from crypter import generate_uuid, generate_signature, verify_signature, encrypt, decrypt
 
+'''
+    Extracts the exec bytes and secured id section and returns a tuple of the data
+'''
 def partition_file(path):
     file = open(path, 'br')
     data = file.read()
@@ -8,6 +11,9 @@ def partition_file(path):
     id = data[-128:]
     return exe, id
 
+'''
+    Generates and embeds the secure id in the executable - it will be padded and appended around the LSB
+'''
 def embed_secure_id(path=None, new_file_path=None):    
     id, size = generate_uuid()
     if path == None:

@@ -6,8 +6,7 @@
 @description - This file contains functions extended from the UNIX exec syscall
 '''
 
-
-# TODO: Shift the logc to the kernel space
+# TODO: Shift the logic to the kernel space
 
 import sys
 import re
@@ -20,13 +19,21 @@ from crypter import verify_uuid, verify_signature, decrypt, generate_uuid
 '''
 def exec(path):
     device_id, _ = generate_uuid() 
+    
     exe, id = partition_file(path)
     print(f"id: {id} \n\n\nsize: {len(id)}")
+    
     decrypted_id = decrypt(id)
-    if verify_signature(exe+device_id, decrypted_id):
-        os.system(f"./{path}")
+
+    try:
+        if verify_signature(exe+device_id, decrypted_id):
+            os.system(f"./{path}")
+    except:
+        print("not verified")
+        sys.exit(-1)
     else:
         print("not verified")
+        sys.exit(-1)
 
 
 if __name__ == "__main__":

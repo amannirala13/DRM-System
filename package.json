@@ -1,0 +1,11 @@
+{
+  "name": "drm-system",
+  "version": "1.0.0",
+  "description": "This is novel DRM solution being built as a research initiative at VIT, Vellore.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "amannirala13",
+  "license": "ISC"
+}
