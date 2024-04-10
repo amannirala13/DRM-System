@@ -38,5 +38,19 @@ def generate_keypair():
     d = multiplicative_inverse(e, phi)
     return ((e, n), (d, n))
 
+def encrypt(pk, plaintext):
+    key, n = pk
+    cipher = [(ord(char) ** key) % n for char in plaintext]
+    return cipher
+
+def decrypt(pk, ciphertext):
+    key, n = pk
+    plain = [chr((char ** key) % n) for char in ciphertext]
+    return ''.join(plain)
+
 if __name__ == "__main__":
-    print(generate_keypair())
+    public, private = generate_keypair()
+    print(f"Public: {public}\nPrivate: {private}")
+    cp = encrypt(public, "Hello world")
+    print(cp)
+    print(decrypt(private, cp))
