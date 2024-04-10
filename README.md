@@ -4,7 +4,7 @@ This is novel DRM solution being built as a research initiative at VIT, Vellore.
 
 **Authors: [Aman Kumar Nirala](https://github.com/amannirala13), [Kaivalya Sao](/), [Shashank Kothari](https://github.com/ShashankKothari-exe)**
 
-<img src="/Users/aman/Developer/DRMSystem/routine/DRM-System/vit_ico.png" alt="vit_logo" style="zoom: 50%;" />
+<img src="https://github.com/amannirala13/DRM-System/blob/main/vit_ico.png" alt="vit_logo" style="zoom: 50%;" />
 
 # 🙋🏻‍♂️ How to use ?
 
