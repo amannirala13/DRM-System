@@ -1,7 +1,7 @@
 # DRM-System
 This is novel DRM solution being built as a research initiative at VIT, Vellore.
 
-Authors: [Aman Kumar Nirala](https://github.com/amannirala13)
+Authors: [Aman Kumar Nirala](https://github.com/amannirala13), (Kaivalya Sao)[]
 
 # 🙋🏻‍♂️ How to use ?
 
@@ -32,6 +32,10 @@ python secure_id mytest.exec ./secured/mytest.exec
 ``````
 
 This will generate a new file at `./secured/mytest.exec`.
+
+This python file can be used to generate executables for your platform and added to the env path for direct terminal access and CI/CD integration.
+
+The osX binaries are provided in the repository with the `secure_exe` and `secure_id` which can be used to perform secured execution and generating secured executable respectively.
 
 ## 🏃🏻 Securely executing the file
 
