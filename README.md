@@ -1,7 +1,10 @@
 # DRM-System
+
 This is novel DRM solution being built as a research initiative at VIT, Vellore.
 
-Authors: [Aman Kumar Nirala](https://github.com/amannirala13), (Kaivalya Sao)[]
+**Authors: [Aman Kumar Nirala](https://github.com/amannirala13), [Kaivalya Sao](/), [Shashank Kothari](https://github.com/ShashankKothari-exe)**
+
+<img src="/Users/aman/Developer/DRMSystem/routine/DRM-System/vit_ico.png" alt="vit_logo" style="zoom: 50%;" />
 
 # 🙋🏻‍♂️ How to use ?
 
@@ -9,11 +12,11 @@ Using the DRM soultion needs both hardware and software confugrations. This guid
 
 First we need to setup the **DRM sub-module**. Typically it's simply interfacing the DRM kit with the GPIO of the system or make a serial connection with the CPU (depending on which model you opt for).
 
-## 🧷 GPIO Connection Guide
+## ➬ GPIO Connection Guide
 
 TODO: Provide the GPIO guide
 
-## 🔗 Serial Connection Guide
+## ➬ Serial Connection Guide
 
 TODO: Provide the Serial guide
 
