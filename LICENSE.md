@@ -41,8 +41,8 @@ This Agreement constitutes the entire agreement between you and the authors rega
 
 ---
 
-**Authorized Signature:**
+**Document Hash**
 
-165eaa351b0ee953a391e56f886430389ece80fcb002cacf2d3f5c764df1d0cf
+3311613243bd143cd7b2ee70f72ae9e7d18cd6889f959f070b39900cc4f5442b
 
 **Date:** April 11, 2024

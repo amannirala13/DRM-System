@@ -68,6 +68,60 @@ This initiative is part of ongoing research at Vellore Institute of Technology, 
 
 For more information on how to use, test, or contribute to the DRM System, please refer to the documentation provided in this repository.
 
+## Verifying the integrity of license
+
+To ensure the integrity and authenticity of the license agreement, all releases are digitally signed. You can verify the digital signature using the [public key](/) provided in this repository.
+
+### Prerequisites
+
+To verify the signature, you will need:
+- OpenSSL installed on your system. You can check if it's already installed by running `openssl version` in your terminal. If not, please refer to [OpenSSL's official documentation](https://www.openssl.org/) for installation instructions.
+- The public key file ([`PUBLIC_KEY.pem`](/)) from this repository.
+- The signature file ([`signature.sig`]()) provided alongside the release.
+- The original file you wish to verify ([`LICENSE.md`](/)).
+
+### Steps to Verify
+
+1. **Download the Public Key**:
+   Download `PUBLIC_KEY.pem` from the repository to your local machine.
+
+2. **Download the Signature File**:
+   Download `signature.sig`, the signature file for the document or software you wish to verify.
+
+3. **Verify the Signature**:
+   Open your terminal and navigate to the directory containing the downloaded files. Run the following command to verify the signature:
+
+   ```bash
+   openssl dgst -sha256 -binary LICENSE.md | openssl pkeyutl -verify -pubin -inkey public_key.pem -sigfile signature.sig
+   ```
+   
+   #### Authorized Signature
+   
+   ```ini
+   tCO3eJQ512fwomh2kn7mZS8aIRRXVzsVqDp5Whmxa0skMx3o+B7K/TEsxwtc+Kkp
+   DPnoL6EWD4Io6Ae1oieplPXxabTIzq4tPadgS7CuCk1Z9A/X5qJ/G0YnIjqDTuKl
+   Ul3CnZ9UZ/QyiSz1/A71uPDEnSyBPtOgMNr8p6LSExOqVSpYTFmZJ6CkyHGeWTae
+   nb0dKz9mXl/cfuUkdzjRoi0YSdf+FrAZVn0utOGXg8jqi9ac86NcdMECk2ZsAcZO
+   dH5PDOJIArOrwcmEszNaS/JjPfkv85BUU/WhSkIVieQ0qJq7r8YmV7s2qeYGH2eo
+   5NcT4meJrHVbv5Sy1QxEAQ==
+   ```
+   
+   #### Public Key
+   
+   ```ini
+   -----BEGIN PUBLIC KEY-----
+   MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtKXiEQU20ZmQpa9ylH2e
+   NbyXMpuPC5x73z57hWDiWp7PCAzQJPoGyOPMrUDVQeiYsVBLjUxVnJHELTApZyuw
+   oPZOaepGlGoDBe2kKV1ExLIzsfUcIzJtzC7RFDxiediyhjKxd7bfb4HiZF2s0BUZ
+   28AVsJp3UXhfzgVmu3+dRZsHFmcpacGX3tiFFPnpcDZEI4I/V9vX9KwoQnZBhKXL
+   DfBXBgqKz2LITsVQLaYxmeVfarC5ssCJa/HHG2lSMVphVY0HcoMQkKfKn2I8et3Z
+   k0bC1GmYPiqypb6b58+Bv8bNvzr8UQqn0JiZpZYatm9r+5GOouxEPPyEvjcIjVSA
+   RwIDAQAB
+   -----END PUBLIC KEY-----
+   ```
+   
+   
+
 ---
 
 © 2024 Aman Kumar Nirala, Kaivalya Sao, Shashank Kothari. All rights reserved.
