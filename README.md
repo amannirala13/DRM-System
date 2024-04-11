@@ -70,20 +70,20 @@ For more information on how to use, test, or contribute to the DRM System, pleas
 
 ## Verifying the integrity of license
 
-To ensure the integrity and authenticity of the license agreement, all releases are digitally signed. You can verify the digital signature using the [public key](/) provided in this repository.
+To ensure the integrity and authenticity of the license agreement, all releases are digitally signed. You can verify the digital signature using the [public key](https://github.com/amannirala13/DRM-System/blob/main/public_key.pem) provided in this repository.
 
 ### Prerequisites
 
 To verify the signature, you will need:
 - OpenSSL installed on your system. You can check if it's already installed by running `openssl version` in your terminal. If not, please refer to [OpenSSL's official documentation](https://www.openssl.org/) for installation instructions.
-- The public key file ([`PUBLIC_KEY.pem`](/)) from this repository.
-- The signature file ([`signature.sig`]()) provided alongside the release.
-- The original file you wish to verify ([`LICENSE.md`](/)).
+- The public key file ([`public_key.pem`](https://github.com/amannirala13/DRM-System/blob/main/public_key.pem)) from this repository.
+- The signature file ([`signature.sig`](https://github.com/amannirala13/DRM-System/blob/main/signature.sig)) provided alongside the release.
+- The original file you wish to verify ([`LICENSE.md`](https://github.com/amannirala13/DRM-System/blob/main/LICENSE.md)).
 
 ### Steps to Verify
 
 1. **Download the Public Key**:
-   Download `PUBLIC_KEY.pem` from the repository to your local machine.
+   Download `public_key.pem` from the repository to your local machine.
 
 2. **Download the Signature File**:
    Download `signature.sig`, the signature file for the document or software you wish to verify.
