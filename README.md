@@ -1,10 +1,11 @@
 # DRM-System
-
-This is a novel DRM solution being built as a research initiative at VIT, Vellore.
-
-**Authors: [Aman Kumar Nirala](https://github.com/amannirala13), [Kaivalya Sao](/), [Shashank Kothari](https://github.com/ShashankKothari-exe)**
-
 <img src="https://github.com/amannirala13/DRM-System/blob/main/vit_ico.png" alt="vit_logo" style="zoom: 50%;" />
+
+This is a novel DRM solution being built as a research project at VIT, Vellore.
+
+The repository contains the code and documentation for a Digital Rights Management (DRM) system designed to protect digital content and ensure secure access. The DRM system aims to address the growing need for robust content protection in various digital media, including software, documents, and multimedia files. By integrating both hardware and software components, the DRM system provides a multi-layered security approach. The hardware module can be connected via GPIO or serial connection to interface with the system’s CPU, ensuring that only authorized hardware configurations can access the protected content. Additionally, the software components include secure executable generation and validation scripts, which embed unique security identifiers into digital files, preventing unauthorized use and distribution. This project represents an innovative step towards enhancing digital content security through a combination of encryption, user authentication, and rights management.
+
+### _**Authors: [Aman Kumar Nirala](https://github.com/amannirala13), [Kaivalya Sao](/), [Shashank Kothari](https://github.com/ShashankKothari-exe)**_
 
 # 🙋🏻‍♂️ How to use?
 
